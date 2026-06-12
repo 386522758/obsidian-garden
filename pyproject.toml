@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidian-garden"
+version = "0.1.0"
+description = "Turn your Obsidian vault into a beautiful digital garden — a static site with wikilinks, backlinks and tags."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "zibaoyang", email = "zibaoyang8@gmail.com" }]
+requires-python = ">=3.9"
+keywords = ["obsidian", "static-site-generator", "digital-garden", "markdown", "wikilinks"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+    "markdown>=3.4",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+obsidian-garden = "obsidian_garden.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/386522758/obsidian-garden"
+Issues = "https://github.com/386522758/obsidian-garden/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
