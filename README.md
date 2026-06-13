@@ -2,6 +2,10 @@
 
 [English](#english) | [中文](#中文)
 
+[![CI](https://github.com/386522758/obsidian-garden/actions/workflows/ci.yml/badge.svg)](https://github.com/386522758/obsidian-garden/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
 Turn your Obsidian vault into a beautiful **digital garden** — a static site with working wikilinks, backlinks and tags. One command, zero config.
 
 ```
